@@ -65,11 +65,11 @@ namespace Log4NetExamples {
             return appender;
         }
 
-        private static ILog log = LogManager.GetLogger(typeof(Program));
+        private static ILog log = LogManager.GetLogger("appenderName");
     }
 
     public class Bar {
-        public static ILog log = LogManager.GetLogger(typeof(Bar));
+        public static ILog log = LogManager.GetLogger("appenderName");
 
         public void DoIt() {
             log.Error("Did it again!");
